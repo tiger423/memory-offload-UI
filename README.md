@@ -32,7 +32,7 @@ This project provides a complete full-stack solution for running Large Language 
 ## 📁 Project Structure
 
 ```
-vLLM/
+memory-offload-UI/
 ├── backend/                    # Python backend
 │   ├── config.py              # Model registry
 │   ├── inference_engine.py    # Core inference
@@ -90,7 +90,7 @@ vLLM/
 
 ```bash
 # 1. Clone or navigate to project
-cd vLLM
+cd memory-offload-UI
 
 # 2. Install Node.js dependencies
 cd webapp
