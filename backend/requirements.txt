@@ -1,0 +1,18 @@
+# Backend Python Dependencies
+# For LLM Inference Web UI Backend
+
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+
+# System monitoring
+psutil>=5.9.0
+
+# Optional: Standalone Flask server
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Development
+ipython>=8.0.0

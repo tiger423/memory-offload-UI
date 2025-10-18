@@ -1,0 +1,21 @@
+2025-10-12 22:27:34 - inference_api - [INFO] - ================================================================================
+2025-10-12 22:27:34 - inference_api - [INFO] - INFERENCE API STARTED - Session: 8b1eff41-1906-45d6-986f-e6e091553613
+2025-10-12 22:27:34 - inference_api - [INFO] - ================================================================================
+2025-10-12 22:27:34 - inference_api - [INFO] - Log file: E:\claude-code-3\vLLM\backend\..\logs\inference_8b1eff41-1906-45d6-986f-e6e091553613_20251012_222734.log
+2025-10-12 22:27:34 - inference_api - [INFO] - Model: opt-30b
+2025-10-12 22:27:34 - inference_api - [INFO] - Prompt: Hugging Face is pushing the convention that a unicorn with two horns becomes a llama....
+2025-10-12 22:27:34 - inference_api - [INFO] - Quantization: 8-bit
+2025-10-12 22:27:34 - inference_api - [INFO] - FP32 CPU Offload: True
+2025-10-12 22:27:34 - inference_api - [INFO] - Max Length: 50
+2025-10-12 22:27:34 - inference_api - [INFO] - Temperature: 0.7
+2025-10-12 22:27:34 - inference_api - [INFO] - GPU Memory: 14GiB
+2025-10-12 22:27:34 - inference_api - [INFO] - CPU Memory: 56GiB
+2025-10-12 22:27:34 - inference_api - [INFO] - ================================================================================
+2025-10-12 22:27:34 - inference_api - [INFO] - Validating model: opt-30b
+2025-10-12 22:27:34 - inference_api - [ERROR] - EXCEPTION: 'BackendConfig' object has no attribute 'MODEL_REGISTRY'
+2025-10-12 22:27:34 - inference_api - [ERROR] - Stack trace:
+Traceback (most recent call last):
+  File "E:\claude-code-3\vLLM\backend\inference_api.py", line 124, in main
+    if args.model not in config.MODEL_REGISTRY:
+                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BackendConfig' object has no attribute 'MODEL_REGISTRY'

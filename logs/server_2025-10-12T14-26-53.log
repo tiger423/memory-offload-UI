@@ -1,0 +1,99 @@
+2025-10-12T14:26:53.840Z [INFO] [server] ============================================================
+2025-10-12T14:26:53.841Z [INFO] [server] Server Logger Initialized
+2025-10-12T14:26:53.842Z [INFO] [server] Log file: E:\claude-code-3\vLLM\logs\server_2025-10-12T14-26-53.log
+2025-10-12T14:26:53.842Z [INFO] [server] ============================================================
+2025-10-12T14:27:05.250Z [INFO] [server] GET / {
+  "query": {},
+  "ip": "::1"
+}
+2025-10-12T14:27:05.281Z [INFO] [server] GET /css/style.css {
+  "query": {},
+  "ip": "::1"
+}
+2025-10-12T14:27:05.285Z [INFO] [server] GET /js/app.js {
+  "query": {},
+  "ip": "::1"
+}
+2025-10-12T14:27:05.300Z [INFO] [server] GET /api/models {
+  "query": {},
+  "ip": "::1"
+}
+2025-10-12T14:27:05.301Z [INFO] [server] Fetching available models list
+2025-10-12T14:27:05.303Z [DEBUG] [server] Returned models: [
+  "opt-30b",
+  "llama2-7b",
+  "llama2-13b",
+  "falcon-7b"
+]
+2025-10-12T14:27:05.358Z [INFO] [server] WebSocket: Client connected - spZD1tGLR9d20Av3AAAB
+2025-10-12T14:27:26.542Z [INFO] [server] POST /api/inference/start {
+  "query": {},
+  "ip": "::1"
+}
+2025-10-12T14:27:26.555Z [INFO] [server] ============================================================
+2025-10-12T14:27:26.555Z [INFO] [server] NEW INFERENCE REQUEST
+2025-10-12T14:27:26.555Z [INFO] [server] ============================================================
+2025-10-12T14:27:26.555Z [INFO] [server] Request parameters: {
+  "modelId": "opt-30b",
+  "promptLength": 85,
+  "quantization": "8-bit",
+  "enableFp32CpuOffload": true,
+  "maxLength": 50,
+  "temperature": 0.7,
+  "topP": 0.9,
+  "gpuMemory": "14GiB",
+  "cpuMemory": "56GiB"
+}
+2025-10-12T14:27:26.556Z [INFO] [server] Created new session: 8b1eff41-1906-45d6-986f-e6e091553613
+2025-10-12T14:27:26.557Z [INFO] [server] Active sessions count: 1
+2025-10-12T14:27:26.557Z [INFO] [server] Starting Python inference process for session 8b1eff41-1906-45d6-986f-e6e091553613
+2025-10-12T14:27:26.557Z [INFO] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Starting Python inference process
+2025-10-12T14:27:26.558Z [INFO] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Python command: python E:\claude-code-3\vLLM\backend\inference_api.py --model opt-30b --prompt Hugging Face is pushing the convention that a unicorn with two horns becomes a llama. --quantization 8-bit --max-length 50 --temperature 0.7 --top-p 0.9 --gpu-memory 14GiB --cpu-memory 56GiB --session-id 8b1eff41-1906-45d6-986f-e6e091553613 --offload-folder ./offload --log-level INFO --enable-fp32-cpu-offload
+2025-10-12T14:27:26.558Z [DEBUG] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Environment: {
+  "HF_TOKEN": "NOT SET"
+}
+2025-10-12T14:27:26.566Z [INFO] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Python process spawned with PID 45164
+2025-10-12T14:27:26.568Z [INFO] [server] Response sent to client
+2025-10-12T14:27:26.568Z [INFO] [server] ============================================================
+2025-10-12T14:27:34.212Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: 2025-10-12 22:27:34 - inference_api - [INFO] - ================================================================================
+2025-10-12T14:27:34.213Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: 2025-10-12 22:27:34 - inference_api - [INFO] - INFERENCE API STARTED - Session: 8b1eff41-1906-45d6-986f-e6e091553613
+2025-10-12 22:27:34 - inference_api - [INFO] - ================================================================================
+2025-10-12 22:27:34 - inference_api - [INFO] - Log file: E:\claude-code-3\vLLM\backend\..\logs\inference_8b1eff41-1906-45d6-986f-e6e091553613_20251012_222734.log
+2025-10-12 22:27:34 - inference_api - [INFO] - Model: opt-30b
+2025-10-12 22:27:34 - inference_api - [INFO] - Prompt: Hugging Face is pushing the convention that a unicorn with two horns becomes a llama....
+2025-10-12 22:27:34 - inference_api - [INFO] - Quantization: 8-bit
+2025-10-12 22:27:34 - inference_api - [INFO] - FP32 CPU Offload: True
+2025-10-12 22:27:34 - inference_api - [INFO] - Max Length: 50
+2025-10-12T14:27:34.213Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: 2025-10-12 22:27:34 - inference_api - [INFO] - Temperature: 0.7
+2025-10-12 22:27:34 - inference_api - [INFO] - GPU Memory: 14GiB
+2025-10-12 22:27:34 - inference_api - [INFO] - CPU Memory: 56GiB
+2025-10-12 22:27:34 - inference_api - [INFO] - ================================================================================
+2025-10-12 22:27:34 - inference_api - [INFO] - Validating model: opt-30b
+2025-10-12T14:27:34.214Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: 2025-10-12 22:27:34 - inference_api - [ERROR] - EXCEPTION: 'BackendConfig' object has no attribute 'MODEL_REGISTRY'
+2025-10-12T14:27:34.215Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: 2025-10-12 22:27:34 - inference_api - [ERROR] - Stack trace:
+Traceback (most recent call last):
+  File "E:\claude-code-3\vLLM\backend\inference_api.py", line 124, in main
+    if args.model not in config.MODEL_REGISTRY:
+                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BackendConfig' object has no attribute 'MODEL_REGISTRY'
+2025-10-12T14:27:34.215Z [DEBUG] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDOUT: {"type": "error", "data": {"error": "'BackendConfig' object has no attribute 'MODEL_REGISTRY'"}, "timestamp": "2025-10-12T22:27:34.221943"}
+2025-10-12T14:27:34.215Z [DEBUG] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Parsed message: {
+  "type": "error",
+  "data": {
+    "error": "'BackendConfig' object has no attribute 'MODEL_REGISTRY'"
+  },
+  "timestamp": "2025-10-12T22:27:34.221943"
+}
+2025-10-12T14:27:34.215Z [DEBUG] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Handling message type: error {
+  "error": "'BackendConfig' object has no attribute 'MODEL_REGISTRY'"
+}
+2025-10-12T14:27:34.215Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Error received: 'BackendConfig' object has no attribute 'MODEL_REGISTRY'
+2025-10-12T14:27:34.216Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: Traceback (most recent call last):
+2025-10-12T14:27:34.216Z [ERROR] [server] [8b1eff41-1906-45d6-986f-e6e091553613] STDERR: File "E:\claude-code-3\vLLM\backend\inference_api.py", line 124, in main
+    if args.model not in config.MODEL_REGISTRY:
+                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BackendConfig' object has no attribute 'MODEL_REGISTRY'
+2025-10-12T14:27:34.905Z [INFO] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Python process exited with code 1
+2025-10-12T14:27:34.905Z [INFO] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Session FAILED - Duration: 8348ms
+2025-10-12T15:27:34.920Z [INFO] [server] [8b1eff41-1906-45d6-986f-e6e091553613] Cleaning up session from memory
+2025-10-12T15:30:25.685Z [INFO] [server] WebSocket: Client disconnected - spZD1tGLR9d20Av3AAAB
