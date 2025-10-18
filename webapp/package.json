@@ -1,0 +1,30 @@
+{
+  "name": "llm-inference-ui",
+  "version": "1.0.0",
+  "description": "Web UI for LLM Inference and Fine-tuning",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "llm",
+    "inference",
+    "fine-tuning",
+    "transformers",
+    "quantization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
